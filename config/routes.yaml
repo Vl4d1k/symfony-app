@@ -1,0 +1,4 @@
+index:
+    path: /api/number/{max}
+    controller: App\Controller\SimpleController::number
+    methods: [GET]
