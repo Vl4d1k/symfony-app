@@ -9,6 +9,9 @@ rebuild:
 	docker-compose rm -vsf
 	docker-compose up -d --build
 
+php-cli-exec:
+	docker exec -it symfony_php_1 /bin/sh
+
 db:
 	docker-compose exec php ./bin/console doctrine:database:drop --force
 	docker-compose exec php ./bin/console doctrine:database:create
